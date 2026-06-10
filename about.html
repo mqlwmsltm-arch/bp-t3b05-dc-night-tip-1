@@ -3,394 +3,200 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>등촌 유흥 공략소 소개 | 데이터마이닝 Bro의 양심 프로젝트</title>
-    <meta name="description" content="강서구 등촌동 일대에서 눈탱이와 덤터기를 격파하고 투명한 가라오케 및 룸싸롱 정보를 공고히 하는 분석 플랫폼 스토리. 정찰제 마젠타빛 축복을 누려보십시오.">
-    <meta name="keywords" content="등촌 가라오케 소개, 등촌 가성비 룸싸롱 분석, 강서구 유흥 정찰제, 등촌역 유흥 예약 마스터">
-    <link rel="canonical" href="https://t3b05-dc-night-tip-1.pages.dev/about.html">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&family=Noto+Sans+KR:wght@300;400;700;900&display=swap" rel="stylesheet">
-    
+    <meta name="bpaas-design-system" content="brutalist-avantgarde">
+    <meta name="bpaas-design-theme" content="kr-raw-concrete">
+    <meta name="description" content="등촌 유흥 꿀팁 – 진짜 하는 놈들만 아는 스팟과 노하우. 찐 내상 없는 등촌 유흥의 모든 것. 010-6279-0862로 바로 콜">
+    <meta name="keywords" content="등촌유흥, 등촌꿀팁, 등촌술집, 등촌밤문화, 등촌핫플, 유흥정보, 등촌노래방, 등촌주점">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://t3b05-dc-night-tip-1.vercel.app/">
+    <meta property="og:title" content="등촌 유흥 꿀팁 – 찐 내상 없이 즐기는 법">
+    <meta property="og:description" content="등촌에서 제대로 놀고 싶은 놈들만 봐. 유흥 꿀팁 전수함. 010-6279-0862">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://t3b05-dc-night-tip-1.vercel.app/">
+    <meta property="og:image" content="https://t3b05-dc-night-tip-1.vercel.app/og-image.jpg">
+    <title>등촌 유흥 꿀팁 – 정보</title>
     <style>
-        :root {
-            --cyber-black: #060309;
-            --cyber-dark: #120917;
-            --neon-magenta: #ff007f;
-            --neon-violet: #8b5cf6;
-            --neon-cyan: #00ffff;
-            --text-neon: #faebff;
-            --text-dim: #9ca3af;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
+        /* RESET */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; font-size: 16px; }
         body {
-            font-family: 'Noto Sans KR', sans-serif;
-            background: var(--cyber-black);
-            color: var(--text-neon);
-            min-height: 100vh;
-            line-height: 1.8;
-            overflow-x: hidden;
-            position: relative;
-        }
-
-        /* Scanline Overlay */
-        body::before {
-            content: " ";
-            display: block;
-            position: fixed;
-            top: 0; left: 0; bottom: 0; right: 0;
-            background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 127, 0.04), rgba(0, 255, 0, 0.01), rgba(0, 0, 255, 0.04));
-            z-index: 99999;
-            background-size: 100% 4px, 6px 100%;
-            pointer-events: none;
-        }
-
-        header {
-            width: 100%;
-            background: rgba(18, 9, 23, 0.95);
-            border-bottom: 2px solid var(--neon-magenta);
-            box-shadow: 0 0 15px rgba(255, 0, 127, 0.3);
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-
-        .nav-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 1.1rem 2rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .logo {
-            font-family: 'Orbitron', sans-serif;
-            font-size: 1.6rem;
-            font-weight: 900;
-            color: #fff;
-            text-shadow: 0 0 5px #fff, 0 0 10px var(--neon-magenta), 0 0 20px var(--neon-magenta);
-            text-decoration: none;
-        }
-
-        .nav-links {
-            display: flex;
-            gap: 2rem;
-            list-style: none;
-        }
-
-        .nav-links a {
-            color: var(--text-neon);
-            text-decoration: none;
-            font-size: 0.95rem;
-            font-weight: 700;
-            transition: all 0.3s ease;
-        }
-
-        .nav-links a:hover {
-            color: var(--neon-cyan);
-            text-shadow: 0 0 8px var(--neon-cyan);
-        }
-
-        .hotline-btn {
-            background: transparent;
-            border: 2px solid var(--neon-magenta);
-            padding: 0.6rem 1.3rem;
-            border-radius: 4px;
-            color: #fff;
-            font-weight: 700;
-            text-decoration: none;
-            box-shadow: 0 0 10px rgba(255, 0, 127, 0.4);
-            transition: all 0.3s ease;
-        }
-
-        .hotline-btn:hover {
-            background: var(--neon-magenta);
-            box-shadow: 0 0 20px rgba(255, 0, 127, 0.8);
-            text-shadow: 0 0 5px #fff;
-        }
-
-        main {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 4rem 2rem;
-        }
-
-        .page-title {
-            text-align: center;
-            margin-bottom: 4rem;
-        }
-
-        .page-title h1 {
-            font-family: 'Orbitron', sans-serif;
-            font-size: 2.8rem;
-            font-weight: 900;
-            color: #fff;
-            text-shadow: 0 0 10px var(--neon-magenta);
-            margin-bottom: 1rem;
-        }
-
-        .page-title p {
-            color: var(--text-dim);
-            font-size: 1.1rem;
-        }
-
-        .cyber-box {
-            background: var(--cyber-dark);
-            border: 2px solid var(--neon-purple);
-            box-shadow: 0 0 20px rgba(139, 92, 246, 0.15);
-            border-radius: 8px;
-            padding: 3rem;
-            margin-bottom: 4rem;
-        }
-
-        .cyber-box h2 {
-            font-size: 2rem;
-            font-weight: 900;
-            color: #fff;
-            margin-bottom: 1.5rem;
-            text-shadow: 0 0 8px var(--neon-magenta);
-            border-bottom: 2px solid var(--neon-magenta);
-            padding-bottom: 0.5rem;
-        }
-
-        .cyber-box p {
-            font-size: 1.1rem;
-            color: #cbd5e1;
-            margin-bottom: 1.5rem;
-            line-height: 1.8;
-        }
-
-        .philosophy-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 2rem;
-            margin-top: 3rem;
-        }
-
-        .philosophy-card {
-            background: rgba(0, 0, 0, 0.4);
-            border: 1px solid rgba(255, 255, 255, 0.04);
-            border-radius: 6px;
-            padding: 2rem;
-            transition: all 0.3s ease;
-        }
-
-        .philosophy-card:hover {
-            border-color: var(--neon-magenta);
-            box-shadow: 0 0 10px rgba(255, 0, 127, 0.2);
-        }
-
-        .philosophy-card h3 {
-            font-size: 1.25rem;
-            color: var(--neon-magenta);
-            margin-bottom: 1rem;
-            font-weight: 900;
-            text-shadow: 0 0 5px var(--neon-magenta);
-        }
-
-        .philosophy-card p {
-            font-size: 0.95rem;
-            color: var(--text-dim);
-        }
-
-        /* UGC Reviews Block */
-        .ugc-section {
-            margin-bottom: 4rem;
-        }
-
-        .ugc-section h2 {
-            font-family: 'Orbitron', sans-serif;
-            font-size: 2.2rem;
-            font-weight: 900;
-            text-align: center;
-            margin-bottom: 3rem;
-            text-shadow: 0 0 8px var(--neon-magenta);
-            color: #fff;
-        }
-
-        .ugc-list {
-            display: flex;
-            flex-direction: column;
-            gap: 1.5rem;
-        }
-
-        .ugc-item {
-            background: var(--cyber-dark);
-            border: 1px solid rgba(255, 255, 255, 0.04);
-            border-radius: 6px;
-            padding: 2rem;
-            border-left: 4px solid var(--neon-magenta);
-        }
-
-        .ugc-meta {
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 0.8rem;
-            font-size: 0.95rem;
-            color: var(--neon-cyan);
-            font-weight: 900;
-        }
-
-        .ugc-text {
-            color: #cbd5e1;
-            font-size: 1rem;
+            font-family: 'Courier New', Courier, monospace;
+            background: #1a1a1a;
+            color: #e0e0e0;
             line-height: 1.6;
+            padding: 20px;
+            min-height: 100vh;
         }
-
-        .back-link {
-            text-align: center;
-            margin-top: 3rem;
-        }
-
-        .back-link a {
-            color: var(--neon-cyan);
-            text-decoration: none;
-            font-weight: 700;
-            transition: all 0.3s ease;
-        }
-
-        .back-link a:hover {
-            color: var(--neon-magenta);
-            text-shadow: 0 0 8px var(--neon-magenta);
-        }
-
-        footer {
-            background: #030105;
-            border-top: 2px solid var(--neon-magenta);
-            padding: 3.5rem 2rem;
-            text-align: center;
-            font-size: 0.9rem;
-            color: var(--text-dim);
-        }
-
-        .footer-logo {
-            font-family: 'Orbitron', sans-serif;
-            font-size: 1.4rem;
-            font-weight: 900;
-            color: #fff;
-            text-shadow: 0 0 8px var(--neon-cyan);
-            margin-bottom: 1.1rem;
+        /* BRUTALIST RAW STYLES */
+        h1, h2, h3, h4 { font-weight: 900; text-transform: uppercase; letter-spacing: -0.02em; }
+        h1 { font-size: 3.5rem; line-height: 1; margin: 1.5rem 0; border-left: 8px solid #ff6600; padding-left: 1rem; }
+        h2 { font-size: 2.2rem; margin: 2rem 0 1rem; border-bottom: 4px solid #ff6600; padding-bottom: 0.3rem; }
+        h3 { font-size: 1.5rem; margin: 1.5rem 0 0.8rem; position: relative; }
+        h3::before { content: '▶'; color: #ff6600; margin-right: 0.5rem; }
+        p, li, a, blockquote, figcaption, time { font-size: 1.1rem; margin-bottom: 1rem; }
+        a { color: #ff6600; text-decoration: underline; text-underline-offset: 3px; }
+        a:hover { color: #ffffff; background: #ff6600; text-decoration: none; }
+        strong { color: #ff6600; font-weight: 900; }
+        /* BUTTON / CTA */
+        .btn-raw {
             display: inline-block;
-        }
-
-        .footer-links {
-            display: flex;
-            justify-content: center;
-            gap: 2rem;
-            margin: 1.5rem 0;
-            list-style: none;
-        }
-
-        .footer-links a {
-            color: var(--text-dim);
+            background: #ff6600;
+            color: #000;
+            font-weight: 900;
+            text-transform: uppercase;
+            padding: 1rem 2.5rem;
+            border: 4px solid #000;
             text-decoration: none;
-            font-weight: 700;
-            transition: color 0.3s ease;
+            font-size: 1.2rem;
+            letter-spacing: -0.02em;
+            cursor: pointer;
+            transition: 0.1s;
+            margin: 0.5rem 0;
         }
-
-        .footer-links a:hover {
-            color: var(--neon-magenta);
+        .btn-raw:hover { background: #000; color: #ff6600; border-color: #ff6600; }
+        .btn-raw:active { transform: scale(0.95); }
+        /* NAV */
+        nav { background: #111; padding: 1rem 2rem; margin-bottom: 2rem; border: 3px solid #333; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; }
+        nav .logo { font-size: 1.8rem; font-weight: 900; color: #ff6600; text-transform: uppercase; text-decoration: none; }
+        nav .nav-links { display: flex; gap: 1.5rem; list-style: none; }
+        nav .nav-links a { color: #ccc; text-decoration: none; font-weight: bold; font-size: 1rem; text-transform: uppercase; padding: 0.3rem 0.8rem; border: 2px solid transparent; }
+        nav .nav-links a:hover { color: #ff6600; border-color: #ff6600; }
+        .hamburger { display: none; flex-direction: column; cursor: pointer; gap: 4px; }
+        .hamburger span { width: 30px; height: 4px; background: #ff6600; display: block; }
+        @media (max-width: 768px) {
+            nav .nav-links { display: none; flex-direction: column; width: 100%; margin-top: 1rem; background: #111; padding: 1rem; border: 2px solid #333; }
+            nav .nav-links.active { display: flex; }
+            .hamburger { display: flex; }
+            h1 { font-size: 2.2rem; }
+            h2 { font-size: 1.6rem; }
         }
+        /* LAYOUT */
+        .container { max-width: 1100px; margin: 0 auto; }
+        .card { background: #222; border: 3px solid #333; padding: 2rem; margin: 2rem 0; }
+        .card h2 { margin-top: 0; }
+        .card-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin: 2rem 0; }
+        .card-item { background: #1f1f1f; border: 2px solid #444; padding: 1.5rem; }
+        .card-item h3 { margin-top: 0; }
+        blockquote { border-left: 6px solid #ff6600; padding: 1rem 1.5rem; background: #111; margin: 1.5rem 0; font-style: italic; }
+        figure { margin: 2rem 0; }
+        figure img { max-width: 100%; border: 4px solid #333; }
+        figcaption { font-size: 0.9rem; color: #999; margin-top: 0.5rem; }
+        /* TEL LINK */
+        .tel-link { font-size: 2rem; font-weight: 900; color: #ff6600; text-decoration: none; display: inline-block; margin: 1rem 0; }
+        .tel-link:hover { background: #ff6600; color: #000; padding: 0.2rem 0.5rem; }
+        /* FOOTER */
+        footer { margin-top: 4rem; border-top: 4px solid #333; padding: 2rem 0; text-align: center; color: #777; }
+        footer a { color: #ff6600; }
+        /* MISC */
+        .raw-list { list-style: none; padding: 0; }
+        .raw-list li { padding: 0.5rem 0; border-bottom: 1px solid #333; }
+        .raw-list li::before { content: '⚡'; margin-right: 0.8rem; color: #ff6600; }
+        .highlight { background: #ff6600; color: #000; padding: 0.1rem 0.4rem; font-weight: 900; }
+        .note { font-size: 0.9rem; color: #aaa; border-left: 4px solid #666; padding-left: 1rem; }
     </style>
 </head>
 <body>
-
-    <header>
-        <div class="nav-container">
-            <a href="/" class="logo">DC CYBER TIP</a>
-            <ul class="nav-links">
-                <li><a href="/">홈</a></li>
-                <li><a href="about.html">소개</a></li>
-                <li><a href="blog.html">블로그</a></li>
-            </ul>
-            <a href="tel:010-6279-0862" class="hotline-btn">접속 시그널</a>
+    <nav>
+        <a href="/" class="logo">등촌꿀팁</a>
+        <div class="hamburger" onclick="document.querySelector('.nav-links').classList.toggle('active')">
+            <span></span><span></span><span></span>
         </div>
-    </header>
+        <ul class="nav-links">
+            <li><a href="/">홈</a></li>
+            <li><a href="/info">정보</a></li>
+            <li><a href="/tips">꿀팁</a></li>
+            <li><a href="/contact">문의</a></li>
+        </ul>
+    </nav>
 
-    <main>
-        <section class="page-title">
-            <h1>ABOUT DC CYBER TIP</h1>
-            <p>등촌동 유흥 생태계에 정찰제를 이식하는 마스터 Bro의 다짐</p>
-        </section>
+    <div class="container">
+        <header>
+            <h1>등촌 유흥 꿀팁 – 찐 정보</h1>
+            <p>이 동네에서 밤 새본 놈들만 아는 스팟과 룰. 입소문으로만 돌던 <strong>등촌 유흥 꿀팁</strong>의 진짜 판을 공개한다. 내상 원하는 놈 없지? 그럼 이거 봐라.</p>
+        </header>
 
-        <section class="cyber-box">
-            <h2>등촌동 가성비 가이드의 투명한 운영 모토</h2>
-            <p>형들 안녕. 강서/마포 유흥 판의 덤터기 사기 설계를 정밀하게 해독하고 부수어 나가는 '사이버 딜러 Bro'다. 강서구 등촌동(등촌역, 증미역 일대)은 마곡지구의 배후지로서 수많은 오피스 손님들과 단체 회식 2차 술자리가 끝없이 생겨나는 역동적인 허브지. 그러나 뜨내기 비즈니스 손님들을 꼬여내서 뒤통수를 후려치려는 호갱 장난질이 매우 일상적으로 펼쳐지는 블랙 마켓이기도 해.</p>
-            
-            <p>우리는 단순히 삐끼의 멘트를 읊어주는 광고 전단지가 아니야. 엘든 링의 비밀 데이터마이닝 더미 코드를 해석해 숨겨진 히든 던전과 최고 효율의 보상을 매핑하듯, 등촌역 노래방과 가라오케의 불투명한 유통 단가와 계산서 덤터기 패턴을 수학적으로 파헤쳐. 010-6279-0862 다이렉트 핫라인은 형들의 소중한 밤과 피 같은 월급봉투를 바가지 보스로부터 안전하게 엄호하는 마젠타빛 축복의 빌드야.</p>
-
-            <div class="philosophy-grid">
-                <div class="philosophy-card">
-                    <h3>1. 정찰 주대 고정</h3>
-                    <p>현장의 몽환적 술기운을 악용해 영수증을 위조하거나 마진을 뻥튀기하는 속임수 데이터를 철저히 걷어내고 정밀한 정찰제 가격만 매핑한다.</p>
+        <section>
+            <h2>📍 등촌 유흥의 정석</h2>
+            <div class="card-grid">
+                <div class="card-item">
+                    <h3>진입 금지 구역</h3>
+                    <p>처음 보는 업소에서 문 열어주면 <strong>절대 들어가지 마라</strong>. 대부분 바가지 + 내상 확정. 현지인 단골만 가는 곳이 진짜다.</p>
                 </div>
-                <div class="philosophy-card">
-                    <h3>2. 시스템 룸 매킹</h3>
-                    <p>음향 마이크 테스팅, 매니저 교육 마인드, 프라이빗 룸의 청결도까지 모든 실전 수치가 최고 등급을 획득한 등촌역 마젠타 스팟만 검증 매핑한다.</p>
+                <div class="card-item">
+                    <h3>골목 룰</h3>
+                    <p>등촌 메인 골목에서 2~3번 꺾인 곳일수록 <strong>매출보다 단골 관리</strong>에 집중한다. 이런 곳이 꿀통.</p>
                 </div>
-                <div class="philosophy-card">
-                    <h3>3. 노 바가지 프로토콜</h3>
-                    <p>우리 다이렉트 핫라인 예약을 거치는 모든 유저들은 불확실한 덤터기로부터 절대 안전하도록 보장된 안심 보호망을 상시 가동한다.</p>
+                <div class="card-item">
+                    <h3>시간 빌런 조심</h3>
+                    <p>업소마다 <strong>타임 테이블</strong>이 따로 있다. 11시 전에 들어가면 가성비 최상, 새벽 1시 이후는 텐션이 다르니까 미리 알아둬라.</p>
                 </div>
             </div>
         </section>
 
-        <section class="ugc-section">
-            <h2>검증 요원들의 팩트 매핑 로그 (UGC)</h2>
-            <div class="ugc-list">
-                <div class="ugc-item">
-                    <div class="ugc-meta">
-                        <span>작성자: 등촌역보안팀</span>
-                        <span>평점: ★★★★★ | 업종: 룸가라오케</span>
-                    </div>
-                    <div class="ugc-text">
-                        "등촌역 근처에서 매번 단체 2차 잡을 때마다 바가지 요금 눈치 보느라 곤혹스러웠는데, Bro의 핫라인 하나로 해결했습니다. 견적 칼같이 미리 정해주시고 현장에서 추가 요금 일체 안 나오니까 다들 대만족하고 즐거운 비즈니스 마쳤네요. 등촌 최고의 아지트입니다."
-                    </div>
-                </div>
+        <section>
+            <h2>🎯 실전 꿀팁 3가지</h2>
+            <div class="card">
+                <ol class="raw-list" style="list-style: decimal; padding-left: 1.5rem;">
+                    <li><strong>현금은 20만원만</strong> – 카드 찍으면 업주가 바로 눈치 챈다. 현금 쥐고 흥정하듯 들어가라.</li>
+                    <li><strong>지인 예약 필수</strong> – 전화 한 통이면 가격부터 서비스까지 완전 다르다. 010-6279-0862로 미리 연락해라.</li>
+                    <li><strong>술값은 처음에 정해라</strong> – "처음에 양주 까고 시작하자" 이 말 한마디가 호구인지 아닌지 가른다.</li>
+                </ol>
+            </div>
+            <blockquote>“등촌에서 제대로 놀고 싶으면 현지인 친구 하나 만드는 게 최고야. 없으면 내 번호로 연락해. 같은 돈 내고 두 배로 즐기는 법 알려줌.”</blockquote>
+        </section>
 
-                <div class="ugc-item">
-                    <div class="ugc-meta">
-                        <span>작성자: 축복의인도자</span>
-                        <span>평점: ★★★★★ | 업종: 가성비 노래방</span>
-                    </div>
-                    <div class="ugc-text">
-                        "010-6279-0862 로 미리 조율하고 가니 마치 엘든링 히든 퀘스트를 통과해서 사기 아이템 얻은 것처럼 최상의 조건으로 룸 가라오케를 대접받았습니다. 강서구 라인에서 삐끼들 쫓아가서 지갑 낭비하지 마시고 무조건 이 루트로 진입하세요."
-                    </div>
-                </div>
+        <section>
+            <h2>📞 당장 전화해라</h2>
+            <p>더 구체적인 스팟 리스트, 업소별 내부 분위기, 가격 정보는 전화로만 알려준다. 인터넷에 절대 안 올라오는 <strong>등촌 유흥 꿀팁</strong> 실전 데이터다.</p>
+            <a href="tel:010-6279-0862" class="tel-link">010-6279-0862</a>
+            <p class="note">* 전화 받으면 바로 “인터넷 보고 전화했는데요” 라고 말해라. 그럼 우리 사람인지 바로 앎.</p>
+        </section>
 
-                <div class="ugc-item">
-                    <div class="ugc-meta">
-                        <span>작성자: 등촌동개발자</span>
-                        <span>평점: ★★★★☆ | 업종: 프라이빗 가라오케</span>
-                    </div>
-                    <div class="ugc-text">
-                        "고급진 인테리어에 음향 시설도 최고고 무엇보다 가격이 정찰제라 너무 맘에 들었습니다. 영수증이 아주 깔끔하게 정리되어 나오는 거 보니 정말 신뢰 100% 임다. 앞으로 여기만 갈 생각입니다."
-                    </div>
+        <section>
+            <h2>⚠️ 주의 사항 (내상 방지)</h2>
+            <div class="card">
+                <ul class="raw-list">
+                    <li>웨이터가 바꿔주는 술은 의심해라 – 오픈된 새 병인지 꼭 확인</li>
+                    <li>계산서에 <strong>봉사료 10%</strong> 붙는 곳은 거르는 게 낫다.</li>
+                    <li>포주, 호객꾼 절대 따라가지 마라 – 찐 업소는 길에서 안 잡아당긴다.</li>
+                    <li>방값 5만원 이상 부르면 여기서 나와라. 등촌 기준 방값은 3~4만원이 기본이다.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>🧠 등촌 유흥 맵</h2>
+            <figure>
+                <div style="background: #333; height: 250px; display: flex; align-items: center; justify-content: center; border: 4px solid #555; color: #aaa; font-weight: bold; text-transform: uppercase;">등촌 유흥 스팟 지도 (로딩)</div>
+                <figcaption>등촌동 유흥 밀집 지역 다이어그램 – 골목마다 성격이 다르다. 현지인만 아는 포인트는 전화로.</figcaption>
+            </figure>
+        </section>
+
+        <section>
+            <h2>🤔 자주 묻는 질문</h2>
+            <div class="card-grid">
+                <div class="card-item">
+                    <h3>처음 가도 괜찮아?</h3>
+                    <p>등촌은 외지인보다 <strong>로컬 중심</strong>이라 처음엔 좀 빡셀 수 있다. 근데 팁대로 움직이면 첫날부터 찐 분위기 즐길 수 있음.</p>
+                </div>
+                <div class="card-item">
+                    <h3>예산 얼마나 들고 가야 해?</h3>
+                    <p>1인 기준 10만원이면 술+안주+방값 해결 가능. 15만원 들고 가면 <strong>퀄리티 끝판왕</strong> 즐길 수 있다.</p>
+                </div>
+                <div class="card-item">
+                    <h3>여자 혼자 가도 돼?</h3>
+                    <p>등촌 유흥은 남녀 모두 가능. 단, 여성 혼자는 업소마다 정책이 다르니까 <strong>전화로 확인</strong>하고 가라. 내 번호로 물어봐도 좋고.</p>
                 </div>
             </div>
         </section>
 
-        <div class="back-link">
-            <a href="/">← 등촌 팩트 대시보드로 복귀</a>
+        <div style="text-align: center; margin: 3rem 0;">
+            <a href="tel:010-6279-0862" class="btn-raw">☎ 지금 전화해서 꿀팁 받기</a>
         </div>
-    </main>
+    </div>
 
     <footer>
-        <span class="footer-logo">DC CYBER TIP</span>
-        <p>HOTLINE: 010-6279-0862 (부재시 문자 필)</p>
-        <ul class="footer-links">
-            <li><a href="/">홈</a></li>
-            <li><a href="about.html">소개</a></li>
-            <li><a href="blog.html">블로그</a></li>
-        </ul>
-        <p>© 2026 DC Cyber Tip. All rights reserved. 등촌 유흥 데이터 정밀 리포트.</p>
-    </footer>
-
+        <p>등촌 유흥 꿀팁 – 진짜 하는 놈들만 안다. <a href="tel:010-6279-0862">010-6279-0862</a></p>
+        <p style="font-size: 0.8rem; margin-top: 1rem;">※ 본 사이트는 현지 유흥 정보 공유 목적입니다. 불
 </body>
 </html>

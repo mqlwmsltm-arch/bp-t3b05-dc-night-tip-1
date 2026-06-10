@@ -3,292 +3,125 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>등촌동 노래방 & 가라오케 실패 없는 공략 빌드 전수 | DC CYBER TIP 블로그</title>
-    <meta name="description" content="등촌역 인근에서 눈탱이와 바가지 보스를 처단하고 가성비를 극대화하는 예약 팁. 엘든링 사기 빌드를 타듯 가성비 코드를 전하는 Bro의 포스팅.">
-    <meta name="keywords" content="등촌역 노래방 공략, 등촌 가라오케 꿀팁, 강서구 룸싸롱 가성비 빌드, 등촌동 노래방 예약">
-    <link rel="canonical" href="https://t3b05-dc-night-tip-1.pages.dev/blog.html">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&family=Noto+Sans+KR:wght@300;400;700;900&display=swap" rel="stylesheet">
-    
+    <meta name="bpaas-design-system" content="brutalist-avantgarde">
+    <meta name="bpaas-design-theme" content="kr-acid-yellow">
+    <title>등촌 유흥 꿀팁 블로그 | 진짜 하는 놈이 알려준다</title>
+    <meta name="description" content="등촌 유흥 꿀팁 블로그. 내가 실제로 겪고 알아낸 등촌 유흥의 모든 것. 단속 피하는 법, 괜찮은 업소, 후기까지. 010-6279-0862">
+    <meta name="keywords" content="등촌, 유흥, 등촌 유흥 꿀팁, 등촌 유흥 블로그, 등촌 단속 정보, 등촌 술집 추천, 등촌 유흥 후기">
+    <link rel="canonical" href="https://t3b05-dc-night-tip-1.vercel.app/blog">
+    <meta property="og:title" content="등촌 유흥 꿀팁 - 블로그에서 다 까발림">
+    <meta property="og:description" content="등촌 유흥 블로그. 진짜 하는 사람이 쓰는 찐 후기와 단속 꿀팁. 등촌에서 재미보고 싶으면 여기 봐라.">
     <style>
-        :root {
-            --cyber-black: #060309;
-            --cyber-dark: #120917;
-            --neon-magenta: #ff007f;
-            --neon-violet: #8b5cf6;
-            --neon-cyan: #00ffff;
-            --text-neon: #faebff;
-            --text-dim: #9ca3af;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
+        /* RESET + BASE */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { font-size: 16px; scroll-behavior: smooth; }
         body {
-            font-family: 'Noto Sans KR', sans-serif;
-            background: var(--cyber-black);
-            color: var(--text-neon);
+            font-family: 'Courier New', Courier, monospace;
+            background: #1a1a1a;
+            color: #e0e0e0;
+            line-height: 1.6;
             min-height: 100vh;
-            line-height: 1.8;
-            overflow-x: hidden;
-        }
-
-        header {
-            width: 100%;
-            background: rgba(18, 9, 23, 0.95);
-            border-bottom: 2px solid var(--neon-magenta);
-            box-shadow: 0 0 15px rgba(255, 0, 127, 0.3);
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-
-        .nav-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 1.1rem 2rem;
             display: flex;
-            justify-content: space-between;
-            align-items: center;
+            flex-direction: column;
+        }
+        a { color: #f7e05e; text-decoration: underline; text-underline-offset: 3px; }
+        a:hover { color: #fff; background: #f7e05e; color: #1a1a1a; }
+        ul, ol { list-style: none; }
+        img { max-width: 100%; display: block; }
+
+        /* TYPOGRAPHY */
+        h1, h2, h3, h4 { font-weight: 900; text-transform: uppercase; letter-spacing: -1px; line-height: 1.1; }
+        h1 { font-size: 2.8rem; margin-bottom: 1rem; text-shadow: 4px 4px 0 #f7e05e; color: #fff; }
+        h2 { font-size: 2rem; margin: 2rem 0 1rem; border-left: 8px solid #f7e05e; padding-left: 1rem; }
+        h3 { font-size: 1.4rem; margin: 1.5rem 0 0.5rem; color: #f7e05e; }
+        p, li, blockquote { font-size: 1.05rem; margin-bottom: 1rem; }
+        .star { color: #f7e05e; font-size: 1.2rem; }
+
+        /* LAYOUT */
+        .container { max-width: 720px; margin: 0 auto; padding: 1.5rem; flex: 1; }
+        section { border: 3px solid #f7e05e; padding: 2rem; margin-bottom: 2rem; background: #222; }
+        section:last-of-type { margin-bottom: 0; }
+
+        /* NAV - 유지 */
+        nav { background: #111; border-bottom: 4px solid #f7e05e; padding: 0.8rem 1.5rem; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; }
+        nav a { color: #f7e05e; text-decoration: none; margin-right: 1.5rem; font-weight: bold; font-size: 1rem; padding: 0.3rem 0; }
+        nav a:hover { background: #f7e05e; color: #111; }
+        .hamburger-menu { display: none; flex-direction: column; cursor: pointer; }
+        .hamburger-menu span { width: 28px; height: 3px; background: #f7e05e; margin: 4px 0; }
+
+        /* TEL 링크 */
+        .tel-link { display: inline-block; background: #f7e05e; color: #111; padding: 0.6rem 1.5rem; font-weight: 900; font-size: 1.2rem; border: none; text-decoration: none; margin-top: 0.5rem; }
+        .tel-link:hover { background: #fff; color: #111; }
+
+        /* 반응형 768 */
+        @media (max-width: 768px) {
+            h1 { font-size: 2rem; }
+            h2 { font-size: 1.5rem; }
+            .container { padding: 1rem; }
+            section { padding: 1.2rem; }
+            nav { flex-direction: column; align-items: flex-start; }
+            .nav-links { display: none; width: 100%; flex-direction: column; margin-top: 0.5rem; }
+            .nav-links a { display: block; padding: 0.5rem 0; border-bottom: 1px solid #333; }
+            .hamburger-menu { display: flex; }
+            .hamburger-menu.active + .nav-links { display: flex; }
         }
 
-        .logo {
-            font-family: 'Orbitron', sans-serif;
-            font-size: 1.6rem;
-            font-weight: 900;
-            color: #fff;
-            text-shadow: 0 0 5px #fff, 0 0 10px var(--neon-magenta), 0 0 20px var(--neon-magenta);
-            text-decoration: none;
-        }
-
-        .nav-links {
-            display: flex;
-            gap: 2rem;
-            list-style: none;
-        }
-
-        .nav-links a {
-            color: var(--text-neon);
-            text-decoration: none;
-            font-size: 0.95rem;
-            font-weight: 700;
-            transition: all 0.3s ease;
-        }
-
-        .nav-links a:hover {
-            color: var(--neon-cyan);
-            text-shadow: 0 0 8px var(--neon-cyan);
-        }
-
-        .hotline-btn {
-            background: transparent;
-            border: 2px solid var(--neon-magenta);
-            padding: 0.6rem 1.3rem;
-            border-radius: 4px;
-            color: #fff;
-            font-weight: 700;
-            text-decoration: none;
-            box-shadow: 0 0 8px rgba(255, 102, 0, 0.3);
-            transition: all 0.3s ease;
-        }
-
-        .hotline-btn:hover {
-            background: var(--neon-magenta);
-            color: #fff;
-            box-shadow: 0 0 20px rgba(255, 102, 0, 0.7);
-        }
-
-        main {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 4rem 2rem;
-        }
-
-        .post-content {
-            background: var(--cyber-dark);
-            border: 1px solid rgba(255, 102, 0, 0.08);
-            border-radius: 8px;
-            padding: 3rem;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
-        }
-
-        .post-header {
-            margin-bottom: 2.5rem;
-            border-bottom: 1px solid rgba(255,255,255,0.08);
-            padding-bottom: 1.5rem;
-        }
-
-        .post-title {
-            font-family: 'Orbitron', sans-serif;
-            font-size: 2.3rem;
-            font-weight: 900;
-            color: #fff;
-            text-shadow: 0 0 8px var(--neon-magenta);
-            line-height: 1.3;
-            margin-bottom: 1rem;
-        }
-
-        .post-meta {
-            font-size: 0.9rem;
-            color: var(--neon-magenta);
-            font-weight: 700;
-            letter-spacing: 1px;
-        }
-
-        .post-content h2 {
-            font-size: 1.55rem;
-            color: #fff;
-            text-shadow: 0 0 4px var(--cyber-dark);
-            margin: 2rem 0 1rem 0;
-            border-left: 4px solid var(--neon-magenta);
-            padding-left: 0.8rem;
-        }
-
-        .post-content p {
-            color: #cbd5e1;
-            font-size: 1.05rem;
-            margin-bottom: 1.5rem;
-            line-height: 1.8;
-        }
-
-        .post-content strong {
-            color: #fff;
-        }
-
-        .post-content a {
-            color: var(--neon-cyan);
-            text-decoration: none;
-            font-weight: 700;
-            border-bottom: 1px dashed var(--neon-cyan);
-            transition: all 0.3s ease;
-        }
-
-        .post-content a:hover {
-            color: #fff;
-            text-shadow: 0 0 5px var(--neon-cyan);
-            border-bottom-color: #fff;
-        }
-
-        .info-box {
-            background: rgba(255, 0, 127, 0.03);
-            border: 1px dashed var(--neon-magenta);
-            padding: 1.5rem;
-            border-radius: 8px;
-            margin: 2rem 0;
-        }
-
-        .back-link {
-            text-align: center;
-            margin-top: 3rem;
-        }
-
-        .back-link a {
-            color: var(--neon-cyan);
-            text-decoration: none;
-            font-weight: 700;
-            transition: all 0.3s ease;
-        }
-
-        .back-link a:hover {
-            color: #fff;
-        }
-
-        footer {
-            background: #030105;
-            border-top: 2px solid var(--neon-magenta);
-            padding: 3.5rem 2rem;
-            text-align: center;
-            font-size: 0.9rem;
-            color: var(--text-dim);
-        }
-
-        .footer-logo {
-            font-family: 'Orbitron', sans-serif;
-            font-size: 1.4rem;
-            font-weight: 900;
-            color: #fff;
-            text-shadow: 0 0 8px var(--neon-cyan);
-            margin-bottom: 1.1rem;
-            display: inline-block;
-        }
-
-        .footer-links {
-            display: flex;
-            justify-content: center;
-            gap: 2rem;
-            margin: 2rem 0;
-            list-style: none;
-        }
-
-        .footer-links a {
-            color: var(--text-dim);
-            text-decoration: none;
-            font-weight: 700;
-            transition: color 0.3s ease;
-        }
-
-        .footer-links a:hover {
-            color: var(--neon-magenta);
-        }
+        /* 커스텀 추가 */
+        .blog-post p { font-size: 1.1rem; }
+        .highlight-box { background: #2a2a2a; border: 2px dashed #f7e05e; padding: 1.2rem; margin: 1.5rem 0; }
+        .highlight-box p { margin-bottom: 0; }
     </style>
 </head>
 <body>
-
-    <header>
-        <div class="nav-container">
-            <a href="/" class="logo">DC CYBER TIP</a>
-            <ul class="nav-links">
-                <li><a href="/">홈</a></li>
-                <li><a href="about.html">소개</a></li>
-                <li><a href="blog.html">블로그</a></li>
-            </ul>
-            <a href="tel:010-6279-0862" class="hotline-btn">접속 시그널</a>
+    <!-- 네비게이션 (이전 페이지와 동일) -->
+    <nav>
+        <div style="font-weight:900; font-size:1.2rem; color:#f7e05e;">등촌꿀팁</div>
+        <div class="hamburger-menu" onclick="this.classList.toggle('active'); document.querySelector('.nav-links').classList.toggle('active');">
+            <span></span><span></span><span></span>
         </div>
-    </header>
+        <div class="nav-links">
+            <a href="/">홈</a>
+            <a href="/blog">블로그</a>
+            <a href="/review">후기</a>
+            <a href="/tip" style="color:#fff; background:#f7e05e; padding:0.3rem 0.8rem;">꿀팁</a>
+        </div>
+    </nav>
 
-    <main>
-        <article class="post-content">
-            <div class="post-header">
-                <span class="post-meta">SYSTEM RUNTIME // 2026.05.27</span>
-                <h1 class="post-title">등촌역 밤거리에서 눈탱이 보스를 정교하게 셧다운하는 공략 코드</h1>
+    <div class="container">
+        <!-- 블로그 글 섹션 (정보성 글 1편) -->
+        <section>
+            <h1>등촌 유흥 꿀팁 블로그</h1>
+            <p style="font-size:1.1rem; color:#aaa; margin-bottom:2rem;">
+                <span class="star">★</span> 2025.04.10 · 등촌에서 3년차 놈이 쓰는 찐 후기
+            </p>
+
+            <h2>등촌에서 진짜 재미 보는 법</h2>
+            <p>야, 나는 등촌에서 유흥 좀 해본 사람으로서 확실히 말하는데, 여기 단속 빡세다고 겁먹지 마라. 오히려 단속 정보를 미리 알면 안전하게 놀 수 있어. 내가 알려주는 꿀팁 딱 하나: <strong>밤 10시 이후에 움직이지 마라</strong>. 그때가 딱 집중 단속 시간임. 대신 8시부터 10시 사이에 입장하면 거의 안 걸린다.</p>
+
+            <p>두 번째로 중요한 건 <strong>업소 고르는 법</strong>. 인터넷 후기만 보지 말고, 현지 택시 기사한테 물어봐. 등촌 택시 기사들은 뭐가 핫한지 다 알고 있어. "형님, 요즘 재미 좀 볼 데 없나요?" 한마디면 바로 알려줌. 근데 우리 같은 유흥꾼들끼리만 조용히 돌리자.</p>
+
+            <div class="highlight-box">
+                <p><span class="star">★</span> <strong>내가 보장하는 꿀팁</strong><br>
+                등촌 역 1번 출구 나와서 골목 안쪽으로 50m 들어가면 있는 'XX'라는 곳. 입구가 좀 허름한데 그게 맞음. 거기 매니저 누나한테 "친구 소개로 왔어요" 하면 자리도 잘 내줘. 후불 시스템이라 부담 없고.</p>
             </div>
 
-            <p>어이 형들, 게임 좋아하는 형들이라면 너무 잘 알겠지. <a href="https://t3b05-dc-night-tip-1.pages.dev/">엘든링</a>에서 사기 전회 발라놓고 공략 빌드 맞춰가면 보스가 그냥 녹아내리잖아? 강서구 등촌동 밤거리 유흥 판도 소름 끼치도록 똑같아. 아무 공략 코드 없이 삐끼들의 애매한 꼬심만 믿고 던전(업소)에 대책 없이 뛰어들었다간 그게 바로 카드 한도 초과되는 비참한 배드엔딩 테크트리야. 오늘 우리가 뜯어낸 <strong>양심 정찰제 매트릭스</strong>를 활용해서 덤터기 보스를 단숨에 처단하는 마젠타빛 사기 빌드를 깔끔하게 마킹해줄게.</p>
+            <h3>단속 피하는 현실적인 팁</h3>
+            <p>솔직히 단속은 무서워. 하지만 등촌은 다른 지역보다 <strong>불시 단속보다는 신고 위주</strong>라는 게 내 경험이다. 그러니까 절대 술 취한 척 소리 지르거나 싸우지 마. 조용조용하게 즐기면 아무도 안 건드려. 또 업주한테 "여기 오늘 안전하죠?" 물어보는 것도 방법임. 대부분의 업주들도 단속 걸리면 자기 피해니까 솔직하게 말해줌.</p>
 
-            <h2>빌드 1. 불필요한 더미 데이터 스캔 및 필터링</h2>
-            <p>보스를 공략하기 전에 가장 먼저 해야 할 일은 쓰레기 노이즈 데이터를 필터링하는 거지. 등촌동 골목에 널린 호객 삐끼들이 약속하는 "안주 헐값", "룸 무료 연장" 같은 드립은 100% 더미 가격으로 위장한 사기 덫이야. 검증된 안심 채널인 <a href="about.html">등촌 가이드 마스터 Bro 철학</a>을 토대로 미리 010-6279-0862 예약 시그널을 송출해 최종 주대를 정찰 가격으로 고정해야 해. 이 예약 주대 암호는 현장에서 절대로 변조되지 않는 단단한 방패가 되어 줄 거야.</p>
+            <p>마지막으로 꿀팁 하나 더: 등촌에서 유흥 즐기고 나서 귀가할 때는 <strong>지하철보다는 택시</strong>를 타라. 지하철 역 근처에 가끔 경찰이 대기하고 있거든. 택시 타고 집에 직행하면 99% 안전하다. 이건 내가 피똥 싸면서 배운 거니까 꼭 명심해라.</p>
 
-            <h2>빌드 2. 광역 패턴 피크타임 우회 공략</h2>
-            <p>보스의 위험한 광역 패턴이 쏟아지는 피크타임을 완벽하게 우회 선점하는 것도 꿀팁이지. 등촌역 일대는 목, 금, 토요일 밤 9시부터 11시 사이에 근처 직장인 단체 손님들로 룸이 꽉 차서 대기가 미친 듯이 걸려. 이 골든 타임 슬롯에 예약 없이 무작정 가다가는 호구 잡혀서 비싼 방으로 억지 매칭되거나 덤터기 코스에 말려들 확률이 폭증해. 영리한 데이터마이너 Bro라면 무조건 방문 1~2시간 전에 사전 확인 프로토콜을 수행해서, 초가성비 골든 룸을 미리 락온(Lock-On)해 두고 정찰 주대로 딜을 꽂아 넣는 법이지.</p>
+            <p style="margin-top:2rem; padding-top:1rem; border-top:2px solid #333;">
+                <span class="star">★</span> 더 자세한 상담이 필요하면? <a href="tel:01062790862" class="tel-link">010-6279-0862</a>
+            </p>
+        </section>
+    </div>
 
-            <div class="info-box">
-                <strong>🔑 마젠타 사기 빌드 핵심 요약</strong><br>
-                길거리 호객 삐끼 칼같이 차단 → 사전에 안전한 010-6279-0862 시그널로 정찰 요금 확정 → 약속대로 가성비를 만끽하며 유쾌하게 2차 완수. 이 완벽한 빌드로 등촌동 밤거리를 공략하자.
-            </div>
-
-            <h2>결론: 시스템의 취약점을 파헤치고 누려라</h2>
-            <p>결국 최종 승자는 정보의 구조와 코드 취약점을 먼저 파악하고 이성적으로 노는 스마트한 유저들이야. 등촌 코인노래방과 가라오케 판의 보이지 않는 세뇌 매트릭스를 다 파헤친 우리 Bro 시스템이 형들을 24시간 철저히 백업해주고 있으니, 팩트 예약 빌드만 굳건히 믿고 마젠타빛 밤을 즐기길 바란다, Bro!</p>
-
-            <div class="back-link">
-                <a href="/">← 홈 화면으로 리턴</a>
-            </div>
-        </article>
-    </main>
-
-    <footer>
-        <span class="footer-logo">DC CYBER TIP</span>
-        <p>HOTLINE: 010-6279-0862 (부재시 문자 필)</p>
-        <ul class="footer-links">
-            <li><a href="/">홈</a></li>
-            <li><a href="about.html">소개</a></li>
-            <li><a href="blog.html">블로그</a></li>
-        </ul>
-        <p>© 2026 DC Cyber Tip. All rights reserved. 등촌 유흥 데이터 정밀 리포트.</p>
-    </footer>
-
+    <!-- 간단한 햄버거 메뉴 스크립트 -->
+    <script>
+        document.querySelector('.hamburger-menu').addEventListener('click', function() {
+            this.classList.toggle('active');
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+    </script>
 </body>
 </html>
